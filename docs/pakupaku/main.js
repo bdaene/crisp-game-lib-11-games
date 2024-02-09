@@ -164,7 +164,7 @@ function update() {
     }
   ).isColliding.char;
   if (enemy.eyeVx === 0 && (c.a || c.b || c.c)) {
-    if (powerTicks > 0 || difficulty < 1) {
+    if (powerTicks > 0 || difficulty < 2) {
       play("powerUp");
       addScore(10 * multiplier, enemy.x, 30);
       enemy.eyeVx = player.x > 50 ? -1 : 1;
